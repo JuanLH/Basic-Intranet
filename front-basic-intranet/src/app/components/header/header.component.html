@@ -1,0 +1,16 @@
+<header>
+  <div class="form-group row">
+    <div class="col-sm-8">
+      <nav>
+        <ul>
+          <li *ngFor="let item of items; let i = index">
+            <a class="item" routerLink={{item.route}} (click)="onItemClick(i)" [ngClass]="{ 'selected': i === selectedIndex }">{{item.title}}</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div  class="col">
+      <app-login></app-login>
+    </div>
+  </div>
+</header>

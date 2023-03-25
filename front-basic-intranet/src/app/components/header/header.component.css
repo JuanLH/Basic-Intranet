@@ -1,0 +1,39 @@
+header {
+    background-color: #333;
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 22px;
+    padding: 10px;
+  }
+  
+  nav li:last-child {
+    margin-right: 0;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ffd700;
+  }
+
+  nav a.selected {
+    color: #ffd700;
+    text-decoration: underline #ffd700;
+  }
